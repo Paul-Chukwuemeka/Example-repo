@@ -50,3 +50,18 @@ function checkScissors() {
 // }
 // const value = test(5,3,4,2)
 // console.log(value)
+
+const weekend = {
+    subject: 'javascript',
+    time: '9am - 1pm',
+    number: 4,
+    func: function totalStudents(){
+        return `${weekend.time}`
+    }
+}
+
+weekend.closeTime = '1pm'
+weekend.time = '10:30 am - 1pm'
+delete weekend.subject
+console.log(weekend.func())
+// console.log(weekend.toString())
